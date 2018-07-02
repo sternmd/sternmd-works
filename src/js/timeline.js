@@ -1,5 +1,7 @@
 $(function() {
 
+  window.onload = function() {
+
     var tl = new TimelineLite();
 
     var gradient = $(".gradient"),
@@ -15,6 +17,8 @@ $(function() {
         paused: true,
         reversed: true
     });
+
+    // TweenLite.lagSmoothing(1000, 16);
 
     function intro() {
         tl
@@ -62,6 +66,8 @@ $(function() {
             });
     }
 
-    TweenLite.delayedCall(0.35, intro);
+    TweenLite.delayedCall(0.5, intro);
+
+  }
 
 });
