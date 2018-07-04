@@ -1,6 +1,13 @@
 $(function() {
 
-    $("html").niceScroll();
+    $('html').niceScroll();
+
+    // $('body').on('mouseover', '.message-image', function() {
+    //     $('html').getNiceScroll().remove();
+    // }).on('mouseout', '.message-image', function() {
+    //     $('html').niceScroll();
+    // });
+
     $(this).scrollTop(0);
 
     var offsetTop = $('#projects').offset().top - 50;

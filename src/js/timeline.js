@@ -68,6 +68,6 @@ $(function() {
 
     TweenLite.delayedCall(0.5, intro);
 
-  }
+  };
 
 });
