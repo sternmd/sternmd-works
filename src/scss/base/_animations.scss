@@ -1,6 +1,6 @@
 @keyframes color-change {
     0% { fill: $grey; }
-    50% { fill: $white; }
+    50% { fill: lightgrey; }
     100% { fill: $grey; }
 }
 
@@ -16,22 +16,6 @@
 @keyframes rotate-out {
   from { transform: rotate(360deg); }
   to { transform: rotate(0deg); }
-}
-
-@keyframes shine {
-  0%,
-  10% {
-    background-position: -1000px;
-  }
-  20% {
-    background-position: top left;
-  }
-  90% {
-    background-position: top right;
-  }
-  100% {
-    background-position: 1000px;
-  }
 }
 
 @keyframes width {

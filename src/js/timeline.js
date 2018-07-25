@@ -6,17 +6,9 @@ $(function() {
 
     var gradient = $(".gradient"),
         circle = $("#circle svg, .yinyang"),
-        title = $(".title"),
-        subtitle = $(".subtitle"),
-        hero = $(".title, .subtitle, #about, .arrow"),
-        nav = $(".burger-check, .burger"),
+        hero = $("#about"),
+        nav = $(".burger-check, .burger, .arrow"),
         body = $("html, body");
-
-    var t = TweenLite.to(title, 0.25, {
-        height: 0,
-        paused: true,
-        reversed: true
-    });
 
     // TweenLite.lagSmoothing(1000, 16);
 
@@ -66,7 +58,7 @@ $(function() {
             });
     }
 
-    TweenLite.delayedCall(0.5, intro);
+    TweenLite.delayedCall(0.25, intro);
 
   };
 
