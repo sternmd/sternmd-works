@@ -1,6 +1,8 @@
 //Typography
-@import url("https://fonts.googleapis.com/css?family=Inknut+Antiqua");
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,800');
+@font-face {
+    font-family: 'Theinhardt';
+    src: url('/fonts/theinhardtreg-webfont.ttf') format("truetype");
+}
 
 // Colors
 $white: #FFF;

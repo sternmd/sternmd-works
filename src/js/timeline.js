@@ -23,7 +23,7 @@ $(function() {
             .set(body, {
                 className: "+=no-scroll"
             })
-            .to(gradient, 1, {
+            .to(gradient, 0.75, {
                 height: "100%",
                 ease: Quad.easeInOut
             })
@@ -58,6 +58,8 @@ $(function() {
             });
     }
 
+    //now jump to the end and back again so that everything gets initialized/recorded internally right now, like when your page loads:
+    tl.progress(1).progress(0);
     TweenLite.delayedCall(0.25, intro);
 
   };

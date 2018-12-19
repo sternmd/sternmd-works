@@ -1,0 +1,54 @@
+.message-body {
+  border-style: none;
+  // font-family: "Work Sans";
+}
+
+.message-image {
+  overflow: hidden;
+  img {
+    transition: all .3s ease;
+  }
+  img:hover {
+    transform: scale(1.1);
+  }
+}
+
+.message-header {
+  transition: all ease .75s;
+  background-color: $dark !important;
+  border-radius: none;
+  margin-left: -1em;
+  font-weight: normal;
+}
+.message-header p {
+  font-size: 40px;
+  transition: all ease .75s;
+  margin-bottom: -.25em;
+}
+
+.built-with {
+  transition: all ease .75s;
+  text-transform: uppercase;
+  font-size: smaller;
+  color: $scarlet;
+}
+
+.field.is-grouped { display: none;}
+
+.btn-github {
+  margin-right: -1em;
+  font-size: smaller;
+}
+
+@include mobile {
+  .tag-label {
+    display: none;
+  }
+  .tag {
+    padding-right: 0;
+  }
+
+  .message-header p {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Maxwell Stern | Web Developer & Designer | Chicago</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-77236705-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </head>
+  <body>
+    <div class="gradient"></div>
+
+    <div class="arrow is-hidden-mobile">
+      <a href="#projects">
+        <i class="fas fa-arrow-down"></i>
+      </a>
+    </div>
+
+    <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+    <nav class="navigation">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#hero">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero" id="hero">
+      <div class="hero-body">
+        <div class="is-hidden-mobile" id="circle">
+          <img src="images/yin-yang.svg" class="yinyang" alt="yin yang">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+            <defs>
+                <path id="circlePath" d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+            </defs>
+            <circle cx="150" cy="100" r="75" fill="none"/>
+            <g>
+                <use xlink:href="#circlePath" fill="none"/>
+                <text fill="#FFF">
+                    <textPath xlink:href="#circlePath">c a r p e d i e m</textPath>
+                </text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <p>
+              A selection of websites, web apps, games, and personal projects that I've worked on in the past.
+              <br />
+              <br />
+              For more work please visit my <a href="https://github.com/sternmd">github</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container paddingTlg" id="projects">
+      <div class="columns">
+        <div class="column">
+          <article class="message is-dark">
+            <div class="message-header">
+              <p><a href="https://beatitudes.herokuapp.com/">Beatitudes</a></p>
+            </div>
+            <div class="message-image">
+              <a href="https://beatitudes.herokuapp.com/">
+                <img src="images/beatitudes.png" alt="beatitudes">
+              </a>
+            </div>
+            <div class="message-body">
+              Beatitudes is a web app that displays famous quotes and novels by classic Beat Generation writers. You dig?
+              <br/>
+              <br/>
+              <span class="built-with">Built With: Node/Express, HTML/CSS/JavaScript, Less</span>
+              <a class="button btn-github is-pulled-right" href="https://github.com/sternmd/beatitudes">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </article>
+        </div>
+        <div class="column">
+          <article class="message is-dark">
+            <div class="message-header">
+              <p><a href="http://nimbusprints.com">Nimbus Prints</a></p>
+            </div>
+            <div class="message-image">
+              <a href="http://nimbusprints.com">
+                <img src="images/nimbus.jpg" alt="nimbus prints">
+              </a>
+            </div>
+            <div class="message-body">
+              Founded in 2014, Nimbus Prints began as a fan art project inspired by music, film, anime, and pop culture. Today, we have evolved into an experimental printshop, striving to create original, limited edition print series with artists in Chicago.
+              <br/>
+              <br/>
+              <span class="built-with">Built With: BigCartel, HTML/CSS</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <article class="message is-dark">
+              <div class="message-header">
+                <p><a href="http://studiomosaic.org/">Studio Mosaic</a></p>
+              </div>
+              <div class="message-image">
+                <a href="http://studiomosaic.org/">
+                  <img src="images/studiomosaic.png" alt="studio mosaic">
+                </a>
+              </div>
+              <div class="message-body">
+                Studio Mosaic is a Chicago art collective, digital music label, and independent publisher. An unconventional art site for an unconventional art group.
+                <br/>
+                <br/>
+                <span class="built-with">Built With: HTML/CSS/JavaScript, Sass</span>
+                <a class="button btn-github is-pulled-right" href="https://github.com/sternmd/studiomosaic">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </article>
+        </div>
+        <div class="column">
+          <article class="message is-dark">
+            <div class="message-header">
+              <p><a href="/roybiv">ROYGBIV</a></p>
+            </div>
+            <div class="message-image">
+              <a href="/roygbiv">
+                <img src="images/roygbiv.png" alt="roygbiv game">
+              </a>
+            </div>
+            <div class="message-body">
+              ROYGBIV is a color-matching puzzle game. The goal of the game is for a single player to determine the brightest colored row.
+              <br/>
+              <br/>
+              <span class="built-with">Built With: HTML/CSS/JavaScript</span>
+              <a class="button btn-github is-pulled-right" href="https://github.com/sternmd/sternmd.github.io/tree/master/roygbiv">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <article class="message is-dark">
+            <div class="message-header">
+              <p><a href="https://github.com/Cams-Headphones-2/Client-app">/Mu/sic Charts</a></p>
+            </div>
+            <div class="message-image">
+              <a href="https://github.com/Cams-Headphones-2/Client-app">
+                <img src="images/mucharts.png" alt="studio mosaic">
+              </a>
+            </div>
+            <div class="message-body">
+              /Mu/sic Charts is an app that allows users to build and share music album flowcharts.
+              <br/>
+              <br/>
+              <span class="built-with">Built With: Node/Express, React, MongoDB, HTML/CSS/JS</span>
+              <a class="button btn-github is-pulled-right" href="https://github.com/Cams-Headphones-2/Client-app">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </article>
+      </div>
+      <div class="column">
+        <article class="message is-dark">
+          <div class="message-header">
+            <p><a href="https://caspian-app.herokuapp.com">Caspian App</a></p>
+          </div>
+          <div class="message-image">
+            <a href="https://caspian-app.herokuapp.com">
+              <img src="images/caspian.png" alt="caspian app">
+            </a>
+          </div>
+          <div class="message-body">
+            My first Ruby/Sinatra project. Caspian is an emergency management app, for any trip. Caspian stores and presents important In-Case-of-Emergency info and is meant to be used while outdoors or camping.
+            <br/>
+            <br/>
+            <span class="built-with">Built With: Ruby/Sinatra, HTML/CSS/JavaScript</span>
+            <a class="button btn-github is-pulled-right" href="https://github.com/alexekim/project_caspian">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>GitHub</span>
+            </a>
+
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+  <script src="https://areaaperta.com/nicescroll/js/jquery.nicescroll.min.js"></script>
+  <script type="text/javascript" src="js/main.min.js"></script>
+
+</body>
+</html>

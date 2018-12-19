@@ -1,0 +1,41 @@
+#about, #burger-check, .burger {
+  opacity: 0;
+  transition: all ease .75s;
+  color: $white;
+}
+
+.arrow {
+  z-index: 1;
+  position: fixed;
+  font-size: 2rem;
+  bottom: 2rem;
+  right: 2rem;
+  opacity: 0;
+  -moz-transition: all .25s linear;
+  -webkit-transition: all .25s linear;
+  transition: all .25s linear;
+}
+
+.arrow.down {
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.waving {
+  display: inline-block;
+  animation: waving 0.65s alternate infinite;
+  transform-origin: 50% 90%;
+  animation-timing-function: ease-in-out;
+}
+
+@include mobile {
+  .hero-body {
+    padding: 2rem 1.5rem 1rem 1.5rem;
+  }
+
+  .hero-body .column {
+    padding: 0;
+  }
+}

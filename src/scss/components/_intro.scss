@@ -1,0 +1,126 @@
+.yinyang {
+  max-width: 30px;
+  position: fixed;
+  top: 38px;
+  left: 26px;
+  animation: fadein 3s, rotate-out 4s infinite;
+  animation-timing-function: linear;
+  z-index: 3;
+  cursor: pointer;
+
+  @include mobile {
+    position: fixed;
+    max-width: 20px;
+    left: 4px;
+    top: 20px;
+  }
+}
+
+#circular-text {
+  margin: 0%;
+}
+
+#circle text {
+  font-family: "Theinhardt", "Helvetica Neue", Arial;
+  font-size: 48px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  animation: color-change 12s infinite;
+}
+
+#circle svg {
+  position: fixed;
+  left: -11px;
+  top: -97px;
+  width: 6.5rem;
+  z-index: 1;
+  opacity: 0;
+  transition: all .5s ease;
+  -webkit-animation-name: rotate;
+  -moz-animation-name: rotate;
+  -ms-animation-name: rotate;
+  -o-animation-name: rotate;
+  animation-name: rotate;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -ms-animation-duration: 5s;
+  -o-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+
+  @include mobile {
+      width: 7rem !important;
+      position: absolute !important;
+  }
+}
+
+.gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  width: 100wh;
+  color: $white;
+  background: linear-gradient(
+    -45deg,
+    $green,
+    $mint,
+    $blue,
+    $yellow,
+    $light-red,
+    $orange,
+    $scarlet
+  );
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 12s ease infinite;
+  -moz-animation: Gradient 12s ease infinite;
+  animation: Gradient 12s ease infinite;
+  transition: all ease .75s;
+}
+
+body.invert {
+    color: #111 !important;
+    background-color: $white !important;
+}
+
+.invert {
+
+  .container {
+    background-color: $white;
+    transition: all ease .75s;
+  }
+
+  p {
+    color: #111;
+    transition: all ease .75s;
+  }
+
+  .burger {
+    color: $dark;
+  }
+
+  .built-with {
+    transition: all ease .75s;
+    color: $scarlet;
+  }
+
+  .message-header {
+    background-color: $white !important;
+    transition: all ease .75s;
+  }
+
+  .message-header p {
+    color: $scarlet;
+    transition: all ease .75s;
+  }
+}
